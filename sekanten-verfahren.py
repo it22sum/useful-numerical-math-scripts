@@ -17,5 +17,8 @@ def sekanten_verfahren(f, x0, x1, tolerance):
 
     return x_n
 
-def Aufg1 () :
-    return 
+# Hier Funktion definieren:
+def f(x) :
+    return x ** 2
+
+
