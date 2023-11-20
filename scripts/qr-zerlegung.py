@@ -17,8 +17,10 @@ Example: A = np.array([[1,2,-1],[4,-2,6],[3,1,0]])
 """
 
 
-def Serie8_Aufg2(A):
-    import numpy as np
+def qr(A, b=None):
+    is_b_set = False
+    if b is not None:
+        is_b_set = True
 
     A = np.copy(A)  # necessary to prevent changes in the original matrix A_in
     A = A.astype('float64')  # change to float
@@ -47,7 +49,13 @@ def Serie8_Aufg2(A):
         R = Qi.dot(R)
         Q = Q.dot(Qi.T)
 
-    return (Q, R)
+    if is_b_set:
+        y = Q.T @ b
+        x = np.linalg.solve(R, y)
+        return Q, R, x
+
+    else:
+        return Q, R
 
 A = np.array([
     [1, -2, 3],
@@ -56,10 +64,7 @@ A = np.array([
 ])
 
 
-(Q, R) = Serie8_Aufg2(A)
-(npQ, npR) = np.linalg.qr(A)
-#print(npQ)
-print(npR)
+b = np.array([1, 9, 5])
 
-#print(Q)
-print(R)
+(Q, R) = qr(A)
+print(Q, R)
