@@ -7,6 +7,18 @@ Computer Scientists 1).
 <br>
 <hr>
 
+# Fixpunkt-Iteration
+TODO: Write Documentation
+
+# QR-Zerlegung
+TODO: Write Documentation
+
+# Matrix-Berechnung mit Brüchen
+TODO: Write Documentation
+
+# Sekanten-Verfahren
+TODO: Write Documentation
+
 # 🙏 Participate (for invited collaborators)
 1. Choose one of the learned Mathematical Methods and write a script for it. If your method requires more than one 
 script, put them in a corresponding folder.
