@@ -1,4 +1,4 @@
-# useful-numeric-math-scripts
+# useful-numerical-math-scripts
 Useful Python Scripts for Numerical Mathematics. This project was created in order to keep track of different important 
 mathematical functions or methods which are taught in 'Höhere Mathematik für Informatiker 1' (Higher Mathematics for
 Computer Scientists 1).
