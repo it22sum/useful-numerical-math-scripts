@@ -1,5 +1,4 @@
 def sekanten_verfahren(f, x0, x1, tolerance):
-
     if f(x0) < 0 < f(x1) or f(x0) > 0 > f(x1):
         print("Die Funktion f(x) mit [{a}, {b}] besitzt definitiv eine Nullstelle.".format(a=x0, b=x1))
 
@@ -15,7 +14,6 @@ def sekanten_verfahren(f, x0, x1, tolerance):
         x2 = x_n - ((x_n - x_n_minus_1) / (f(x_n) - f(x_n_minus_1))) * f(x_n)
         x_n_minus_1 = x_n
         x_n = x2
-
 
     return x_n
 
