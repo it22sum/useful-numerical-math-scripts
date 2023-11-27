@@ -5,6 +5,45 @@ Computer Scientists 1).
 <br>
 <br>
 <br>
+
+<hr>
+
+### Kap. 2
+- Maschinendarstellbare Zahlen:<br>
+  Visualisierung, allenfalls Berechnung.
+- Gleitpunktzahlen
+- Maschinengenauigkeit
+- Approximations- und Rundungsfehler:<br>
+  Berechnung von Absolutem und Relativem Fehler, sowie x_max und x_min
+- Fehlerfortpflanzung bei Funktionsauswertungen / Konditionierung:<br>
+  Berechnung Konditionszahl, basierend auf absolutem und relativem Fehler.
+### Kap. 3
+- Fixpunktiteration:<br>
+  Mit Step by step Ausgabe
+- Banachscher Fixpunktsatz:<br>
+  Mit Step by step Ausgabe
+- Newton-Verfahren:<br>
+  Mit Step by step Ausgabe
+  - Vereinfachtes Newton-Verfahren
+- Sekantenverfahren:<br>
+- Konvergenzgeschwindigkeit
+- Fehlerabschätzung
+  - Nullstellensatz von Bolzano
+### Kap. 4
+- Gauss
+- LR-Zerlegung
+- QR-Zerlegung
+- Fehlerberechnung & Aufwandschätzung
+- Iterative Verfahren
+  - Jacobi
+  - Gauss-Seidel
+  - a-priori Abschätzung
+  - a-posteriori Abschätzung
+- Komplexe Zahlen
+- Eigenwerte
+- Eigenvektoren
+- Num. Berechnung Eigenwerte und Eigenvektoren
+
 <hr>
 
 # Fixpunkt-Iteration
