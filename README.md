@@ -54,3 +54,12 @@ continue as follows:
    3. We check out the improved solution and if agreed by all, add it to the collection or replace the older one with it.
 
 # Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
