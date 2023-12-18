@@ -33,6 +33,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "zinosca",
+      "name": "Zino Scalia",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124146175?v=4",
+      "profile": "https://github.com/zinosca",
+      "contributions": [
+        "projectManagement"
+      ]
     }
   ],
   "contributorsPerLine": 7,
