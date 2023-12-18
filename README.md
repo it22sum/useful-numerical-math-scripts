@@ -56,7 +56,7 @@ continue as follows:
    2. Create a pull request and request review from other collaborators.
    3. We check out the improved solution and if agreed by all, add it to the collection or replace the older one with it.
 
-## Contributors ✨
+## ✨ Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
