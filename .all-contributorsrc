@@ -51,6 +51,15 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "fiechdus",
+      "name": "Dustin Fiechter",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50822352?v=4",
+      "profile": "http://fiechdus.github.io",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
