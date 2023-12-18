@@ -1,12 +1,11 @@
 # useful-numerical-math-scripts
+![repo profile](assets/repo-profile.png)
 Useful Python Scripts for Numerical Mathematics. This project was created in order to keep track of different important 
 mathematical functions or methods which are taught in 'Höhere Mathematik für Informatiker 1' (Higher Mathematics for
-Computer Scientists 1).
-<br>
-<br>
-<br>
+Computer Scientists 1) that is taught at the Zurich University of Applied Sciences (ZHAW).
 
-<hr>
+# Contents
+Some examples and the structure in this repository are based on the document 'Vorlesung Höhere Mathematik 1 & 2 - Studiengang BSc. Informatik' by Dr. sc. nat. Reto Knaack
 
 ### Kap. 2
 - Maschinendarstellbare Zahlen:<br>
@@ -44,19 +43,6 @@ Computer Scientists 1).
 - Eigenvektoren
 - Num. Berechnung Eigenwerte und Eigenvektoren
 
-<hr>
-
-# Fixpunkt-Iteration
-TODO: Write Documentation
-
-# QR-Zerlegung
-TODO: Write Documentation
-
-# Matrix-Berechnung mit Brüchen
-TODO: Write Documentation
-
-# Sekanten-Verfahren
-TODO: Write Documentation
 
 # 🙏 Participate (for invited collaborators)
 1. Choose one of the learned Mathematical Methods and write a script for it. If your method requires more than one 
@@ -66,3 +52,5 @@ continue as follows:
    1. Create a corresponding branch and work on your own implementation on there.
    2. Create a pull request and request review from other collaborators.
    3. We check out the improved solution and if agreed by all, add it to the collection or replace the older one with it.
+
+# Contributors
