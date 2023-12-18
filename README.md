@@ -29,6 +29,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/yhlbr"><img src="https://avatars.githubusercontent.com/u/34631187?v=4?s=100" width="100px;" alt="Yannick"/><br /><sub><b>Yannick</b></sub></a><br /><a href="https://github.com/fiechdus/useful-numerical-math-scripts/commits?author=yhlbr" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/sebi-buchmann"><img src="https://avatars.githubusercontent.com/u/100314691?v=4?s=100" width="100px;" alt="Sebastian Buchmann"/><br /><sub><b>Sebastian Buchmann</b></sub></a><br /><a href="https://github.com/fiechdus/useful-numerical-math-scripts/commits?author=sebi-buchmann" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/anderlou"><img src="https://avatars.githubusercontent.com/u/126247755?v=4?s=100" width="100px;" alt="anderlou"/><br /><sub><b>anderlou</b></sub></a><br /><a href="https://github.com/fiechdus/useful-numerical-math-scripts/commits?author=anderlou" title="Code">💻</a></td>
     </tr>
   </tbody>
