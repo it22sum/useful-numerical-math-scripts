@@ -11,3 +11,8 @@ import matplotlib.pyplot as plt
 # ========================================================
 
 
+import struct
+def binary(num):
+    return ''.join('{:0>8b}'.format(c) for c in struct.pack('!f', num))
+
+print(binary(np.sqrt(3)))
