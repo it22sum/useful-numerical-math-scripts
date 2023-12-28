@@ -10,4 +10,3 @@ import matplotlib.pyplot as plt
 # It is supposed to be used as a sort of test environment.
 # ========================================================
 
-

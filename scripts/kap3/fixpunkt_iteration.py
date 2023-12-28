@@ -56,8 +56,6 @@ toleranz = 1e-10
 max_iter = 50
 
 
-#print(fixpunkt_iteration(g, 0, toleranz, max_iter))
-
 # Nullstellen finden
 nullstellen = finde_nullstellen_mit_fixpunktiteration(g, startwerte, toleranz, max_iter)
 for nullstelle in nullstellen:
