@@ -1,13 +1,12 @@
 import pandas as pd
 
-# Anpassung der Fixpunktiteration, um den Overflow zu vermeiden
+# Angepasste Funktion zur Fixpunktiteration
 def fixpunkt_iteration_verlauf(g, startwert, toleranz, max_iter):
     verlauf = []
     x_alt = startwert
     for i in range(max_iter):
         x_neu = g(x_alt)
-        # Hinzugefügt: Abbruch, wenn x_neu zu groß wird, um Overflow zu vermeiden
-        if abs(x_neu) > 1e10:
+        if abs(x_neu) > 1e10:  # Abbruch bei zu großem Wert
             break
         verlauf.append((i, x_alt, x_neu))
         if abs(x_neu - x_alt) < toleranz:
@@ -15,19 +14,19 @@ def fixpunkt_iteration_verlauf(g, startwert, toleranz, max_iter):
         x_alt = x_neu
     return verlauf
 
-# Funktion zur Erstellung einer Tabelle für mehrere Startwerte
+# Funktion zur Erstellung einer verbesserten Tabelle
 def erstelle_tabelle(g, startwerte, toleranz, max_iter):
     tabelle = []
     for wert in startwerte:
         verlauf = fixpunkt_iteration_verlauf(g, wert, toleranz, max_iter)
-        # Erweitern der Liste für jeden Iterationsschritt
-        for i, (n, x_alt, x_neu) in enumerate(verlauf):
-            # Füge die Iterationsergebnisse in die Tabelle ein
-            while len(tabelle) <= i:  # Sicherstellen, dass die Liste lang genug ist
+        for schritt in verlauf:
+            n, x_alt, x_neu = schritt
+            # Erweitere die Tabelle um den aktuellen Iterationsschritt
+            while len(tabelle) <= n:
                 tabelle.append({})
-            tabelle[i][wert] = x_neu
+            tabelle[n][f"x_alt ({wert})"] = x_alt
+            tabelle[n][f"x_neu ({wert})"] = x_neu
     return tabelle
-
 
 # Definiert die Funktion g für die Fixpunktiteration
 def g(x):
@@ -38,10 +37,9 @@ startwerte = [-1, 0, 1]  # Verschiedene Startwerte
 toleranz = 1e-10
 max_iter = 15
 
-# Tabelle erstellen
+# Tabelle erstellen und in DataFrame umwandeln
 tabelle = erstelle_tabelle(g, startwerte, toleranz, max_iter)
-
-# Umwandlung in DataFrame für die Ausgabe
 df_tabelle = pd.DataFrame(tabelle)
 
+# Ausgabe der Tabelle
 print(df_tabelle)
