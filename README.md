@@ -2,6 +2,14 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+## Kenntnisnahme / Acknowledgement:
+Deutsch:
+- **Gemäss aktuellem Stand dieses Projektes wird keine Verantwortung für allfällige inhaltliche Fehler oder fehlerhaften Code übernommen. Personen, welche dieses Repository für Prüfungen, zum Lernen oder für sonstige Arbeiten verwenden, sind selbst dafür verantwortlich, dieses auf seine Richtigkeit und Vollständigkeit zu überprüfen. Mit der Nutzung dieses GitHub Repositories stimmt man zu, sich der erwähnten Tatsache bewusst zu sein und dies in Kauf zu nehmen.**
+
+English:
+- **According to the current status of this project, no responsibility is taken for any errors in content or faulty code. People who use this repository for exams, studying or other work are responsible for checking it for accuracy and completeness. By using this GitHub repository, you agree to be aware of and accept this fact.**
+
+
 ![repo profile](assets/repo-profile.png)
 Useful Python Scripts for Numerical Mathematics. This project was created in order to keep track of different important 
 mathematical functions or methods which are taught in 'Höhere Mathematik für Informatiker 1' (Higher Mathematics for
