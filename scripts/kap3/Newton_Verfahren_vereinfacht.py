@@ -24,15 +24,15 @@ def simplified_newton_method_with_trace_customizable(function, derivative, start
 
 # Definieren der Funktion und ihrer Ableitung
 x = sp.symbols('x')
-f = x**2 - 2
+f = 5*x**3+8*x**2 -1
 f_prime = sp.diff(f, x)
 
 f_lambdified = sp.lambdify(x, f)
 f_prime_lambdified = sp.lambdify(x, f_prime)
 
 # Benutzerdefinierte Einstellungen
-start_value = 2  # Startwert
-custom_tolerance = 1e-6  # Toleranz
+start_value = 0.2  # Startwert
+custom_tolerance = 1e-7  # Toleranz
 custom_max_iterations = 100  # Maximale Anzahl von Iterationen
 
 # Ausführen des vereinfachten Newton-Verfahrens
@@ -48,7 +48,7 @@ x_vals = np.linspace(1, 2.5, 400)
 y_vals = f_lambdified(x_vals)
 
 plt.figure(figsize=(10, 6))
-plt.plot(x_vals, y_vals, label='f(x) = x^2 - 2')
+plt.plot(x_vals, y_vals, label='f(x) = '+str(f))
 plt.scatter(results_table["x_n"], results_table["f(x_n)"], color='red', label='Newton Iterations')
 plt.title('Newton-Verfahren vereinfacht Iterationen und Ursprungsfunktion')
 plt.xlabel('x')

@@ -28,7 +28,7 @@ def secant_method_with_trace(function, x0, x1, tolerance, max_iterations):
 
 # Definieren der Funktion
 x = sp.symbols('x')
-f = x ** 2 - 2  # Funktion f(x) = x^2 - 2
+f = sp.sin(x)-0.5*x
 f_lambdified = sp.lambdify(x, f)
 
 # Benutzerdefinierte Einstellungen

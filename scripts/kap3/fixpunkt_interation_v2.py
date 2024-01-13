@@ -1,5 +1,6 @@
 import math
 
+import numpy
 import pandas as pd
 
 # Angepasste Funktion zur Fixpunktiteration
@@ -32,11 +33,11 @@ def erstelle_tabelle(g, startwerte, toleranz, max_iter):
 
 # Definiert die Funktion g für die Fixpunktiteration
 def g(x):
-    return 2*math.sin(x)
+    return numpy.log(numpy.sqrt(x)+2)
 
 # Parameter
-startwerte = [-1, 0, 1]  # Verschiedene Startwerte
-toleranz = 1e-3
+startwerte = [-1, 0, 1.5]  # Verschiedene Startwerte
+toleranz = 1e-8
 max_iter = 30
 
 # Tabelle erstellen und in DataFrame umwandeln
