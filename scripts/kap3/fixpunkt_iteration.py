@@ -1,11 +1,3 @@
-def g(x):
-    # Ersetzen durch eine geeignete Umformung der Funktion f(x)
-    return x**3+0.3
-
-
-
-
-
 def finde_nullstellen_mit_fixpunktiteration(g, startwerte, toleranz, max_iter):
     def anzahl_nachkommastellen(zahl):
         from decimal import Decimal
@@ -23,7 +15,8 @@ def finde_nullstellen_mit_fixpunktiteration(g, startwerte, toleranz, max_iter):
         decimal_places = len(number_str.split('.')[1])
 
         return decimal_places
-    #-------------------------------------------------------------------
+
+    # -------------------------------------------------------------------
     def fixpunkt_iteration(g, startwert, toleranz, max_iter):
         x_alt = startwert
         for i in range(max_iter):
@@ -36,7 +29,8 @@ def finde_nullstellen_mit_fixpunktiteration(g, startwerte, toleranz, max_iter):
                 return None, i
 
         return x_neu, max_iter
-    #-------------------------------------------------------------------
+
+    # -------------------------------------------------------------------
 
     gefundene_nullstellen = []
     for startwert in startwerte:
@@ -49,14 +43,17 @@ def finde_nullstellen_mit_fixpunktiteration(g, startwerte, toleranz, max_iter):
     return gefundene_nullstellen
 
 
+if __name__ == "__main__":
+    def ex_g(x):
+        # Ersetzen durch eine geeignete Umformung der Funktion f(x)
+        return x ** 3 + 0.3
 
-# Parameter
-startwerte = [-1, 0, 1]  # Verschiedene Startwerte
-toleranz = 1e-10
-max_iter = 50
+    # Parameter
+    ex_startwerte = [-1, 0, 1]  # Verschiedene Startwerte
+    ex_toleranz = 1e-10
+    ex_max_iter = 50
 
-
-# Nullstellen finden
-nullstellen = finde_nullstellen_mit_fixpunktiteration(g, startwerte, toleranz, max_iter)
-for nullstelle in nullstellen:
-    print(f"Nullstelle gefunden bei: {nullstelle}")
+    # Nullstellen finden
+    nullstellen = finde_nullstellen_mit_fixpunktiteration(ex_g, ex_startwerte, ex_toleranz, ex_max_iter)
+    for nullstelle in nullstellen:
+        print(f"Nullstelle gefunden bei: {nullstelle}")
