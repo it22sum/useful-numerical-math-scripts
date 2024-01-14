@@ -4,7 +4,7 @@ import scipy
 A = np.array([[1,2,-1], [4,-2,6], [3,1,0]])  
 b = np.array([9,-4,9])  
   
-lu = scipy.linalg.lu(A)  
+[p,l,r] = scipy.linalg.lu(A)  
   
 l = lu[1]  
 r = lu[2]  
