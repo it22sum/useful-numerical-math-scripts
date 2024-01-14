@@ -1,0 +1,28 @@
+import numpy as np  
+import scipy  
+  
+A = np.array([[1,2,-1], [4,-2,6], [3,1,0]])  
+b = np.array([9,-4,9])  
+  
+[p,l,r] = scipy.linalg.lu(A)  
+  
+l = lu[1]  
+r = lu[2]  
+p = lu[0]  
+  
+#Die Pivot Matrix muss noch invertiert werden, sonst ist sie nicht richtig  
+p_reversed = np.linalg.inv(p)  
+  
+print("Gibt linke Matrix aus: \n"+str(l) + "\n")  
+  
+print("Gibt rechte Matrix aus: \n"+str(r) + "\n")  
+  
+print("Gibt Pivot Matrix aus: \n"+str(p_reversed) + "\n")  
+  
+#Berechnung von Y  
+y = scipy.linalg.solve(l, p_reversed.dot(b))  
+print("Berechnet Y: \n"+str(y) + "\n")  
+  
+#Berechnung von X  
+x = scipy.linalg.solve(r, y)  
+print("Berechnet X: \n"+str(x) + "\n")
